@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="gpu">
+      <UniqueIdentifier>{3de099fd-260c-4e7d-9f65-0f530665abe9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cpu">
+      <UniqueIdentifier>{023ac9a9-e6fc-462f-bee8-0fe2516fc3ff}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="gpu_les.cu">
+      <Filter>gpu</Filter>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gpu_les.h">
+      <Filter>gpu</Filter>
+    </ClInclude>
+    <ClInclude Include="convection.h">
+      <Filter>cpu</Filter>
+    </ClInclude>
+    <ClInclude Include="dataStructure.h">
+      <Filter>cpu</Filter>
+    </ClInclude>
+    <ClInclude Include="diffusion.h">
+      <Filter>cpu</Filter>
+    </ClInclude>
+    <ClInclude Include="divergence.h">
+      <Filter>cpu</Filter>
+    </ClInclude>
+    <ClInclude Include="faceReconstruct.h">
+      <Filter>cpu</Filter>
+    </ClInclude>
+    <ClInclude Include="Function.h">
+      <Filter>cpu</Filter>
+    </ClInclude>
+    <ClInclude Include="gradient.h">
+      <Filter>cpu</Filter>
+    </ClInclude>
+    <ClInclude Include="LinearEquationSolver.h">
+      <Filter>cpu</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh.h">
+      <Filter>cpu</Filter>
+    </ClInclude>
+    <ClInclude Include="pressureVelocityCoupleSolver.h">
+      <Filter>cpu</Filter>
+    </ClInclude>
+    <ClInclude Include="printer.h">
+      <Filter>cpu</Filter>
+    </ClInclude>
+    <ClInclude Include="solver.h">
+      <Filter>cpu</Filter>
+    </ClInclude>
+    <ClInclude Include="temporalTerm.h">
+      <Filter>cpu</Filter>
+    </ClInclude>
+    <ClInclude Include="Tool.h">
+      <Filter>cpu</Filter>
+    </ClInclude>
+    <ClInclude Include="VelocityCorrectionIBM.h">
+      <Filter>cpu</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>cpu</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
