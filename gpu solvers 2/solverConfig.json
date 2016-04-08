@@ -1,0 +1,48 @@
+
+
+
+
+{
+  "Nx": "100",
+  "Ny": "100",
+  "Lx": "1.0",
+  "Ly": "1.0",
+  "variable_num": "1",
+  "gama":"1.0",
+
+"boundarySet":
+     [
+         [  "0"],
+        [ "1","2","3"]
+        
+     ],
+     
+   "boundary_conditions":
+     [
+        [
+            [  "0","1","1"]
+        ],
+        [
+            [ "0","1","0"]
+        ]
+        
+     ],    
+       
+      "Laplace_operator":"Laplace" ,
+      
+     "//////////////////////////1":"GS_iteration/OpenMP_Jacobi_iteration/GPU_Jacobi_iteration/GPU_Jacobi_Solver_vector ",    
+     "linear_equation_solvers"  :[
+         {"type":"GPU_Jacobi_iteration","converge_threhold":"1e-6","max_step":"100000","check_step":"200"}
+     ],
+       
+   "///////////":"uniform_expansion/...",  
+   
+   "expansion_functions":[
+        {"type":"uniform_expansion","parameters":["1","1"]},
+         {"type":"uniform_expansion","parameters":["2","2"]}
+   ],
+   
+  "printers": [
+         {"type" : "tecplot_without_boundary"}
+   ]
+}
